@@ -1,0 +1,4 @@
+INSERT INTO live (ID, CHANNEL_NAME, LIVE_DATE, LIVE_LINK, LIVE_NAME, REGISTRATION_DATE) VALUES ('1', 'Canal Jr' , '2020-06-20T18:00', 'https://www.youtube.com/embed/34uHo7hFmG0', 'Angular 9', '2020-06-20')
+INSERT INTO live (ID, CHANNEL_NAME, LIVE_DATE, LIVE_LINK, LIVE_NAME, REGISTRATION_DATE) VALUES ('2', 'Canal Jr' , '2020-07-20T18:00:00', 'https://www.youtube.com/embed/9_FBCMlqTmM', 'Angular 9', '2020-06-20')
+INSERT INTO live (ID, CHANNEL_NAME, LIVE_DATE, LIVE_LINK, LIVE_NAME, REGISTRATION_DATE) VALUES ('3', 'Canal Jr' , '2020-07-20T18:00:00', 'https://www.youtube.com/embed/LA9Hdw1p9_U', 'Angular 9', '2020-06-20')
+INSERT INTO live (ID, CHANNEL_NAME, LIVE_DATE, LIVE_LINK, LIVE_NAME, REGISTRATION_DATE) VALUES ('4', 'Canal Jr' , '2020-07-20T18:00:00', 'https://www.youtube.com/embed/5vPaoV9SV5U', 'Angular 9', '2020-06-20')
