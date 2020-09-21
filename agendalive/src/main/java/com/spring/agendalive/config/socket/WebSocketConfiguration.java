@@ -1,4 +1,4 @@
-package com.spring.agendalive.config;
+package com.spring.agendalive.config.socket;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
