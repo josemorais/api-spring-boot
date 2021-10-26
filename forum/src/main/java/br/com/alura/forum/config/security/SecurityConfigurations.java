@@ -13,6 +13,9 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import br.com.alura.forum.config.security.filter.AutenticacaoViaTokenFilter;
 
 @EnableWebSecurity
 @Configurable
@@ -43,7 +46,9 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 				.anyRequest().authenticated()
 				.and()
 				.csrf().disable()
-				.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+				.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+				.and()
+				.addFilterBefore(new AutenticacaoViaTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 	}
 
 	// Configuração de recuros estáticos (js, css, img, etc)
